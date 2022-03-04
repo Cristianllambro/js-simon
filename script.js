@@ -2,13 +2,13 @@ const result = document.getElementById('result');
 const bntGenerate = document.getElementById('btn-generate');
 let time = 5;
 let gap = 1000;
-const arrRandom = [];
 
 const myTime = setInterval(decrementTime, gap)
 
 
 bntGenerate.addEventListener ('click', function () {
-    for (i = 0; i < 5; i++) {
+    const arrRandom = [];
+    for (let i = 0; i < 5; i++) {
         let numberRandom = Math.floor(Math.random() * 10 + 1);
         arrRandom.push(numberRandom);
     
